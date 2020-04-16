@@ -1,0 +1,32 @@
+TP3 
+Exercice 2
+
+2/ Les valeurs necessaires dans la clé privée sont : dp, dq,p,q,iq 
+
+
+3/ La deuxième méthode s'exécute plus rapidement que la première donc elle est plus optimisée que la première . 
+
+
+Exercice 3 
+
+on a choisi de faire une injection de faute aléatoire sur le registre N°5
+
+la signature affiché avant  = 3f010be37eb5eca9
+la signature affiché après l'injection de fautes = s = 014cad4a340f946ad9 s = 014cad4a340f946ad9
+
+
+liza@liza-Lenovo-YOGA-720-13IKB:~/Bureau/seance-8_tp/sese_seance-8_files$ python3 bench.py -i crtrsa.asm /dev/null
+^C
+> Inject fault? (r = fault register, s = skip instruction, q = quit) r
+> Which register? (0-32) 5
+> Zero or random? (z = zero, r = random) r
+! r5 randomized
+> Resuming…
+s = 014cad4a340f946ad9
+
+
+
+
+
+
+
